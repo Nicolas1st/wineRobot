@@ -27,7 +27,7 @@ class Robot:
     # always moves in the direction of self.direction
     self.x += distance * cos(self.direction)
     self.y += distance * sin(self.direction)
-    self.positions.append([self.x, self.y, direction])
+    self.positions.append([self.x, self.y, self.direction])
 
 
   def move_back(self):
