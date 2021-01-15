@@ -18,7 +18,7 @@ class Robot:
   def rotate(self, angle=None, direction=None):
     if angle is not None:
       self.direction += angle
-    elif self.direciton is not None:
+    elif self.direction is not None:
       self.direction = direction
     self.direction %= 360
 
