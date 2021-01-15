@@ -15,7 +15,7 @@ class Robot:
     self.direction = direction
 
 
-  def rotate(angle=None, direction=None):
+  def rotate(self, angle=None, direction=None):
     if angle is not None:
       self.direction += angle
     elif direciton is not None:
@@ -23,7 +23,7 @@ class Robot:
     self.direction %= 360
 
 
-  def move(distance):
+  def move(self, distance):
     # always moves in the direction of self.direction
     self.x += distance * cos(self.direction)
     self.y += distance * sin(self.direction)
